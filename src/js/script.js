@@ -3,7 +3,7 @@ import { data } from "./data.js"
 function renderList() {
     let list = document.getElementById("songList")
     
-    data.forEach((item) => {
+    data.map((item) => {
         let img = document.createElement("img")
         let song = document.createElement("p")
         let band = document.createElement("p")
@@ -25,4 +25,3 @@ function renderList() {
 }
 
 renderList()
-
