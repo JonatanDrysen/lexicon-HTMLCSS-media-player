@@ -1,0 +1,11 @@
+.sectionNav {
+    display: block;
+}
+
+nav {
+    background-color:brown;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+    padding: 1rem;
+}

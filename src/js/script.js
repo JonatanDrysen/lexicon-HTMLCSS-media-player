@@ -5,18 +5,21 @@ function renderList() {
 
     data.map((item) => {
         let li = document.createElement("li")
-        let song = document.createElement("p")
+        let div = document.createElement("div")
         let img = document.createElement("img")
+        let song = document.createElement("p")
         let band = document.createElement("p")
         let btn = document.createElement("button")
 
-        song.innerText = item.song
+        div.setAttribute("class", "info")
         img.setAttribute("src", item.img)
+        song.innerText = item.song
         band.innerText = item.band
         btn.innerText = "Details"
         btn.addEventListener("click", () => renderDetail(item))
 
-        li.append(song, img, band, btn)
+        div.append(song, band)
+        li.append(img, div, btn)
 
         let documentFragment = document.createDocumentFragment()
         documentFragment.appendChild(li)
