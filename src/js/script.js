@@ -4,18 +4,21 @@ function renderList() {
     let list = document.getElementById("songList")
 
     data.map((item) => {
-        let li = document.createElement("li")
         let div = document.createElement("div")
+        let li = document.createElement("li")
         let img = document.createElement("img")
         let song = document.createElement("p")
         let band = document.createElement("p")
         let btn = document.createElement("button")
 
-        div.setAttribute("class", "info")
-        img.setAttribute("src", item.img)
         song.innerText = item.song
         band.innerText = item.band
         btn.innerText = "Details"
+
+        div.setAttribute("class", "info")
+        img.setAttribute("src", item.img)
+        song.setAttribute("class", "infoSong")
+        band.setAttribute("class", "infoBand")
         btn.addEventListener("click", () => renderDetail(item))
 
         div.append(song, band)
