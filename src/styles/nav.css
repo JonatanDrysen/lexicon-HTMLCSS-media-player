@@ -3,9 +3,10 @@
 }
 
 nav {
-    background-color:brown;
+    background-color: #283141;
     display: flex;
     justify-content: space-around;
-    font-size: x-large;
+    font-size: 1.5rem;
     padding: 1rem;
+    border-bottom: 1px solid #1e2229;
 }

@@ -1,28 +1,39 @@
 import { data } from "./data.js"
 
+function createButton() {
+    const buttonContainer = document.createElement("div")
+    const button = document.createElement("span")
+
+    buttonContainer.setAttribute("class", "buttonContainer")
+    button.setAttribute("class", "material-icons")
+
+    button.innerText = "play_circle"
+    buttonContainer.appendChild(button)
+    return buttonContainer
+}
+
 function renderList() {
     let list = document.getElementById("songList")
-
+    
     data.map((item) => {
+        const playButton = createButton()
         let div = document.createElement("div")
         let li = document.createElement("li")
         let img = document.createElement("img")
         let song = document.createElement("p")
         let band = document.createElement("p")
-        let btn = document.createElement("button")
 
         song.innerText = item.song
         band.innerText = item.band
-        btn.innerText = "Details"
 
         div.setAttribute("class", "info")
         img.setAttribute("src", item.img)
         song.setAttribute("class", "infoSong")
         band.setAttribute("class", "infoBand")
-        btn.addEventListener("click", () => renderDetail(item))
+        playButton.addEventListener("click", () => renderDetail(item))
 
         div.append(song, band)
-        li.append(img, div, btn)
+        li.append(img, div, playButton)
 
         let documentFragment = document.createDocumentFragment()
         documentFragment.appendChild(li)

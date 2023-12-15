@@ -5,3 +5,7 @@ body {
     color: #ffff;
     margin: auto;
 }
+
+.material-icons {
+    cursor: pointer;
+}
