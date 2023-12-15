@@ -7,6 +7,18 @@
     padding: 0;
 }
 
+.songList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.songList li {
+    border-bottom: 1px solid #1e2229;
+    display: grid;
+    grid-template-columns: auto 1fr 3rem;
+}
+
 .info {
     display: grid;
     grid-template-rows: 50% 50%;
@@ -44,25 +56,13 @@
     width: 100%;
 }
 
+.songList img {
+    display: grid;
+    height: 4rem;
+}
+
 .buttonContainer {
     display: grid;
     justify-self: center;
     align-self: center;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    border-bottom: 1px solid #1e2229;
-    display: grid;
-    grid-template-columns: auto 1fr 3rem;
-}
-
-img {
-    display: grid;
-    height: 4rem;
 }
