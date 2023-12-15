@@ -65,7 +65,7 @@
     height: 4rem;
 }
 
-.buttonContainer {
+.playButtonContainer {
     display: grid;
     justify-self: center;
     align-self: center;

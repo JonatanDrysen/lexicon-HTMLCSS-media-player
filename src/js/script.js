@@ -1,22 +1,16 @@
 import { data } from "./data.js"
+import { 
+    createPlayButton, 
+    createPlusbutton,
+    createFavoritebutton 
+} from "./utils/buttons.js"
 
-function createButton() {
-    const buttonContainer = document.createElement("div")
-    const button = document.createElement("span")
-
-    buttonContainer.setAttribute("class", "buttonContainer")
-    button.setAttribute("class", "material-icons")
-
-    button.innerText = "play_circle"
-    buttonContainer.appendChild(button)
-    return buttonContainer
-}
 
 function renderList() {
     let list = document.getElementById("songList")
     
     data.map((item) => {
-        const playButton = createButton()
+        const playButton = createPlayButton()
         let div = document.createElement("div")
         let li = document.createElement("li")
         let img = document.createElement("img")
@@ -34,7 +28,6 @@ function renderList() {
 
         div.append(song, band)
         li.append(img, div, playButton)
-
         let documentFragment = document.createDocumentFragment()
         documentFragment.appendChild(li)
 
@@ -48,6 +41,8 @@ function renderDetail(item) {
     }
 
     let detailContainer = document.getElementById("detailView")
+    const plusButton = createPlusbutton()
+    const favoriteButton = createFavoritebutton()
 
     let imgContainer = document.createElement("div")
     let infoContainer = document.createElement("div")
@@ -63,7 +58,7 @@ function renderDetail(item) {
     infoContainer.setAttribute("class", "infoContainer")
 
     imgContainer.appendChild(img)
-    infoContainer.append(song, band)
+    infoContainer.append(plusButton, favoriteButton, song, band)
     detailContainer.innerHTML = ""
     detailContainer.append(imgContainer, infoContainer)
 }

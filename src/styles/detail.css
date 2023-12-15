@@ -13,10 +13,25 @@
 }
 
 .imgContainer img {
-    height: 25rem;
+    height: 20rem;
 }
 
 .infoContainer {
+    width: 80%;
     justify-self: center;
     text-align: center;
+}
+
+.plusButtonContainer {
+    display: inline;
+    float: left;
+}
+
+.favoriteButtonContainer {
+    display: inline;
+    float: right;
+}
+
+.infoContainer p {
+    display: block;
 }
