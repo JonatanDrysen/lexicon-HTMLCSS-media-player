@@ -35,4 +35,29 @@ export const data = [
         song: "Youngest Daughter",
         band: "Superheaven"
     },
+    {
+        img: "https://f4.bcbits.com/img/a0083782465_5.jpg",
+        album: "Surfer Girl",
+        song: "Surfer Girl",
+        band: "Persona La Ave"
+    },
+    {
+        img: "https://f4.bcbits.com/img/a0255327603_10.jpg",
+        album: "Songs & Demos 2015-2017",
+        song: "Insomniac",
+        band: "Memo Boy, Chakra Efendi"
+    },
+    {
+        img: "https://f4.bcbits.com/img/a2434085989_10.jpg",
+        album: "Wild Heart",
+        song: "Blondie",
+        band: "Current Joys"
+    },
+    {
+        img: "https://upload.wikimedia.org/wikipedia/en/d/d1/Duster_-_Stratosphere_front_cover.jpg",
+        album: "Stratosphere",
+        song: "Inside Out",
+        band: "Duster"
+    },
+    
 ]
