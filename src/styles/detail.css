@@ -1,5 +1,5 @@
 .sectionDetail {
-    background-color:burlywood;
+    background-color:#283141;
     flex: 1;
 }
 
@@ -17,21 +17,53 @@
 }
 
 .infoContainer {
-    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-self: center;
     text-align: center;
+    width: 80%;
 }
 
 .plusButtonContainer {
     display: inline;
-    float: left;
+    align-self: center;
+}
+
+.textSong {
+    font-size: 1.2rem;
+}
+
+.textBand {
+    font-size: 1rem;
+    opacity: 80%;
 }
 
 .favoriteButtonContainer {
     display: inline;
-    float: right;
+    align-self: center;
 }
 
-.infoContainer p {
-    display: block;
+.progressBarContainer {
+    display: grid;
+    grid-template-columns: 3rem auto 3rem;
+    justify-self: center;
+    width: 60%;
+    gap: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.progressBar {
+    background-color: #1e2229;
+    display: flex;
+    align-self: center;
+    border-radius: 1rem;
+    height: 0.5rem;
+}
+
+.progress {
+    height: 100%;
+    width: 20%;
+    background-color: azure;
+    border-radius: 1rem;
 }
