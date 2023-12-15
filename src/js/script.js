@@ -12,19 +12,22 @@ function renderList() {
         let div = document.createElement("div")
         let li = document.createElement("li")
         let img = document.createElement("img")
-        let song = document.createElement("p")
+        let title = document.createElement("p")
         let band = document.createElement("p")
+        let album = document.createElement("p")
 
-        song.innerText = item.song
+        title.innerText = item.title
         band.innerText = item.band
+        album.innerText = item.album
 
-        div.setAttribute("class", "info")
+        div.setAttribute("class", "titleBand")
         img.setAttribute("src", item.img)
-        song.setAttribute("class", "infoSong")
-        band.setAttribute("class", "infoBand")
+        title.setAttribute("class", "titleBandTitle")
+        band.setAttribute("class", "titleBandBand")
+        album.setAttribute("class", "titleBandAlbum")
         playButton.addEventListener("click", () => renderDetail(item))
 
-        div.append(song, band)
+        div.append(title, band)
         li.append(img, div, playButton)
         let documentFragment = document.createDocumentFragment()
         documentFragment.appendChild(li)
@@ -49,20 +52,20 @@ function renderDetail(item) {
     let textContainer = document.createElement("div")
 
     let img = document.createElement("img")
-    let song = document.createElement("p")
+    let title = document.createElement("p")
     let band = document.createElement("p")
 
     img.setAttribute("src", item.img)
-    song.innerText = item.song
+    title.innerText = item.title
     band.innerText = item.band
 
     imgContainer.setAttribute("class", "imgContainer")
     infoContainer.setAttribute("class", "infoContainer")
-    song.setAttribute("class", "textSong")
+    title.setAttribute("class", "textTitle")
     band.setAttribute("class", "textBand")
     
     imgContainer.appendChild(img)
-    textContainer.append(song, band)
+    textContainer.append(title, band)
     infoContainer.append(plusButton, textContainer, favoriteButton)
 
     detailContainer.innerHTML = ""

@@ -23,7 +23,7 @@
     grid-template-columns: auto 1fr 3rem;
 }
 
-.info {
+.titleBand {
     display: grid;
     grid-template-rows: 50% 50%;
     align-items: center;
@@ -35,7 +35,7 @@
     white-space: nowrap;
 }
 
-.infoSong {
+.titleBandTitle {
     font-size: 1.2em;
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-.infoBand {
+.titleBandBand {
     font-size: 1rem;
     opacity: 80%;
     margin: 0;

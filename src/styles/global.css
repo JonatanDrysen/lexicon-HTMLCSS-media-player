@@ -5,6 +5,8 @@ body {
     background-color: #283141;
     color: #ffff;
     margin: auto;
+    margin-left: 2rem;
+    margin-right: 2rem
 }
 
 .flexContainer {
