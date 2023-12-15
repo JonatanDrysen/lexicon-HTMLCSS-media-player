@@ -7,19 +7,18 @@ export function createSongControls() {
     const skipNext = document.createElement("span")
     const shuffle = document.createElement("span")
 
+    container.setAttribute("class", "songControlsContainer")
+    mainControlsContainer.setAttribute("class", "mainControlsContainer")
     repeat.setAttribute("class", "material-icons")
-    repeat.innerText = "repeat"
-
     skipPrev.setAttribute("class", "material-icons")
-    skipPrev.innerText = "skip_previous"
-
     play.setAttribute("class", "material-icons")
-    play.innerText = "play_circle"
-    
     skipNext.setAttribute("class", "material-icons")
-    skipNext.innerText = "skip_next"
-
     shuffle.setAttribute("class", "material-icons")
+
+    repeat.innerText = "repeat"
+    skipPrev.innerText = "skip_previous"
+    play.innerText = "play_circle"
+    skipNext.innerText = "skip_next"
     shuffle.innerText = "shuffle"
 
     mainControlsContainer.append(skipPrev, play, skipNext)
