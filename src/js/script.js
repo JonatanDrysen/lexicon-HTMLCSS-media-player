@@ -9,7 +9,8 @@ function renderList() {
     
     data.map((item) => {
         const playButton = createPlayButton()
-        let div = document.createElement("div")
+        let titleBandContainer = document.createElement("div")
+        let albumContainer = document.createElement("div")
         let li = document.createElement("li")
         let img = document.createElement("img")
         let title = document.createElement("p")
@@ -20,15 +21,17 @@ function renderList() {
         band.innerText = item.band
         album.innerText = item.album
 
-        div.setAttribute("class", "titleBand")
+        titleBandContainer.setAttribute("class", "titleBand")
+        albumContainer.setAttribute("class", "albumContainer")
         img.setAttribute("src", item.img)
         title.setAttribute("class", "titleBandTitle")
         band.setAttribute("class", "titleBandBand")
-        album.setAttribute("class", "titleBandAlbum")
+        album.setAttribute("class", "album")
         playButton.addEventListener("click", () => renderDetail(item))
 
-        div.append(title, band)
-        li.append(img, div, playButton)
+        titleBandContainer.append(title, band, album)
+        albumContainer.appendChild(album)
+        li.append(img, titleBandContainer, albumContainer, playButton)
         let documentFragment = document.createDocumentFragment()
         documentFragment.appendChild(li)
 
