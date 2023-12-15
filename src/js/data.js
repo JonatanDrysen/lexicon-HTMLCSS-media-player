@@ -43,7 +43,7 @@ export const data = [
     },
     {
         img: "https://f4.bcbits.com/img/a0255327603_10.jpg",
-        album: "titles & Demos 2015-2017",
+        album: "Songs & Demos 2015-2017",
         title: "Insomniac",
         band: "Memo Boy, Chakra Efendi"
     },
