@@ -12,6 +12,10 @@
     justify-self: center;
 }
 
+.imgContainer img {
+    height: 25rem;
+}
+
 .infoContainer {
     justify-self: center;
     text-align: center;

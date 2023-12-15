@@ -1,12 +1,12 @@
 export const data = [
     {
-        img: "https://upload.wikimedia.org/wikipedia/en/4/4f/DIIV_-_Is_the_Is_Are.jpg",
+        img: "https://f4.bcbits.com/img/a0923562264_10.jpg",
         album: "Is the Is Are",
         song: "Dust",
         band: "DIIV"
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/en/7/7b/DIIV_-_Oshin.png",
+        img: "https://f4.bcbits.com/img/0010043405_71.jpg",
         album: "Oshin",
         song: "Doused",
         band: "DIIV"
@@ -18,19 +18,19 @@ export const data = [
         band: "The Smiths"
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Just_For_a_Day.jpg",
+        img: "https://cdn-resident-music.com/image/cache/data/miscellaneous/jun2020/slow-500x500.jpg",
         album: "Just For A Day",
         song: "Slowdive",
         band: "Slowdive"
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/en/8/89/Beach_Fossils_2010.jpg",
+        img: "https://i.discogs.com/mI57PgN-iDhMHbQDnLn3sKS5XkYhr5SkYxRFQCywPw0/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0OTMw/MTgtMTYwNjQxMjc0/NC0xOTUyLmpwZWc.jpeg",
         album: "Beach Fossils",
         song: "Vacation",
         band: "Beach Fossils"
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/en/2/22/Superheaven_-_Jar%2C_Cover_%28Current_Pressing%29.jpg",
+        img: "https://f4.bcbits.com/img/a0891545762_65",
         album: "Jar",
         song: "Youngest Daughter",
         band: "Superheaven"
@@ -54,7 +54,7 @@ export const data = [
         band: "Current Joys"
     },
     {
-        img: "https://upload.wikimedia.org/wikipedia/en/d/d1/Duster_-_Stratosphere_front_cover.jpg",
+        img: "https://f4.bcbits.com/img/a0165062421_65",
         album: "Stratosphere",
         song: "Inside Out",
         band: "Duster"
