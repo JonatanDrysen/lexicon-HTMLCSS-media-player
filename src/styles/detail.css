@@ -49,8 +49,8 @@
     justify-self: center;
     width: 60%;
     gap: 0.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .progressBar {
@@ -66,4 +66,25 @@
     width: 20%;
     background-color: white;
     border-radius: 1rem;
+}
+
+.songControlsContainer {
+    display: grid;
+    grid-template-columns: 1fr 15rem 1fr;
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.songControlsContainer span {
+    align-self: center;
+}
+
+.mainControlsContainer {
+    justify-self: center;
+}
+
+.mainControlsContainer span {
+    font-size: 4rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }
