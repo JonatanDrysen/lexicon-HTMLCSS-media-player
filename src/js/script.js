@@ -49,20 +49,23 @@ function renderDetail(item) {
 
     let detailContainer = document.getElementById("detailView")
 
+    let imgContainer = document.createElement("div")
+    let infoContainer = document.createElement("div")
     let img = document.createElement("img")
     let song = document.createElement("p")
     let band = document.createElement("p")
-    let album = document.createElement("p")
 
     img.setAttribute("src", item.img)
     song.innerText = item.song
     band.innerText = item.band
-    album.innerText = item.album
 
+    imgContainer.setAttribute("class", "imgContainer")
+    infoContainer.setAttribute("class", "infoContainer")
+
+    imgContainer.appendChild(img)
+    infoContainer.append(song, band)
     detailContainer.innerHTML = ""
-    detailContainer.append(img, song, band, album)
-
-    console.log(detailContainer)
+    detailContainer.append(imgContainer, infoContainer)
 }
 
 renderList()
