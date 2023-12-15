@@ -1,6 +1,7 @@
 import { data } from "./data.js"
 import { createPlayButton, createPlusbutton, createFavoritebutton } from "./utils/buttons.js"
 import { createProgressBar } from "./utils/progressBar.js"
+import { createSongControls } from "./utils/songControls.js"
 
 
 function renderList() {
@@ -41,6 +42,7 @@ function renderDetail(item) {
     const plusButton = createPlusbutton()
     const favoriteButton = createFavoritebutton()
     const progressBar  = createProgressBar()
+    const songControls = createSongControls()
 
     let imgContainer = document.createElement("div")
     let infoContainer = document.createElement("div")
@@ -64,7 +66,7 @@ function renderDetail(item) {
     infoContainer.append(plusButton, textContainer, favoriteButton)
 
     detailContainer.innerHTML = ""
-    detailContainer.append(imgContainer, infoContainer, progressBar)
+    detailContainer.append(imgContainer, infoContainer, progressBar, songControls)
 }
 
 renderList()
