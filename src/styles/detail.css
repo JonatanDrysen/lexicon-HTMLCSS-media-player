@@ -8,17 +8,17 @@
 }
 
 .imgContainer {
-    margin: 1rem;
+    margin: 0.5rem;
     justify-self: center;
 }
 
 .imgContainer img {
-    height: 20rem;
+    height: 15rem;
 }
 
 .infoContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
     justify-self: center;
     text-align: center;
     width: 80%;
@@ -27,10 +27,21 @@
 .plusButtonContainer {
     display: inline;
     align-self: center;
+    margin-right: 0.5rem;
+}
+
+.textContainer {
+    width: 100%;
+
+    white-space: nowrap;
+    overflow-x: hidden;
 }
 
 .textTitle {
     font-size: 1.2rem;
+
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .textBand {
@@ -41,6 +52,7 @@
 .favoriteButtonContainer {
     display: inline;
     align-self: center;
+    margin-left: 0.5rem;
 }
 
 .progressBarContainer {
@@ -49,8 +61,8 @@
     justify-self: center;
     width: 60%;
     gap: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .progressBar {
@@ -72,7 +84,7 @@
     display: grid;
     grid-template-columns: 1fr 15rem 1fr;
     justify-self: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .songControlsContainer span {
@@ -87,4 +99,8 @@
     font-size: 4rem;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
+}
+
+@media  screen and (max-width: 900px){
+    
 }
