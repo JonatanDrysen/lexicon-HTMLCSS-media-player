@@ -4,7 +4,7 @@
     flex-direction: column;
     max-width: 50vw;
     min-width: 50vw;
-    max-height: 100vh;
+    max-height: 89vh;
     margin: 0;
     padding: 0;
 
@@ -37,31 +37,41 @@
 
 .albumContainer {
     align-self: center;
+    padding-left: 0.5rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.album {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .titleBandTitle {
+    justify-self: start;
+    align-self: end;
     font-size: 1.2em;
+    width: 100%;
     margin: 0;
     padding: 0;
-    align-self: end;
-    justify-self: start;
 
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
 }
 
 .titleBandBand {
+    justify-self: start;
+    align-self: start;
     font-size: 1rem;
     opacity: 80%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    align-self: start;
-    justify-self: start;
 
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 100%;
 }
 
 .songList img {
@@ -73,5 +83,20 @@
     display: grid;
     justify-self: center;
     align-self: center;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .albumContainer {
+        display: none;
+    }
+
+    .songList li {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .titleBand {
+        padding-right: 0.5rem;
+    }
 }
