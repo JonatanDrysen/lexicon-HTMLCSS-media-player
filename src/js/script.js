@@ -64,6 +64,7 @@ function renderDetail(item) {
 
     imgContainer.setAttribute("class", "imgContainer")
     infoContainer.setAttribute("class", "infoContainer")
+    textContainer.setAttribute("class", "textContainer")
     title.setAttribute("class", "textTitle")
     band.setAttribute("class", "textBand")
     
