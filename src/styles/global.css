@@ -6,7 +6,9 @@ body {
     color: #ffff;
     margin: auto;
     margin-left: 2rem;
-    margin-right: 2rem
+    margin-right: 2rem;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .flexContainer {
